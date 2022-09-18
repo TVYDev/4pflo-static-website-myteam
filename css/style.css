@@ -1,0 +1,66 @@
+@import "./normalize.css";
+@import "./global.css";
+
+.container {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 4rem 12rem;
+  }
+}
+
+/* Header */
+.header {
+  align-items: center;
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+}
+
+.header .logo__text {
+  color: var(--color-heading);
+  font-size: 4rem;
+  padding-bottom: 8px;
+}
+
+.header__menu-toggler {
+  color: var(--color-heading);
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.header__menu-toggler:hover,
+.header__menu-toggler:focus {
+  color: var(--color-body);
+}
+
+.header .menu,
+.header .btn-contact-us {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo__text {
+    font-size: 3rem;
+    padding-bottom: 5px;
+  }
+
+  .header .menu {
+    display: flex;
+    flex-grow: 2;
+    gap: 3rem;
+    align-self: center;
+  }
+
+  .header .btn-contact-us {
+    display: block;
+  }
+
+  .header .header__menu-toggler {
+    display: none;
+  }
+}
