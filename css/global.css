@@ -14,7 +14,6 @@
   box-sizing: border-box;
 }
 
-/* Typography */
 html {
   /* 62.5% x 16px = 10px */
   font-size: 62.5%;
@@ -28,8 +27,29 @@ body {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 4.5rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
 a {
   text-decoration: none;
+}
+
+/* Text */
+.text--accent {
+  color: var(--color-accent);
+}
+
+.text--normal {
+  color: var(--color-heading);
+  line-height: 25px;
 }
 
 /* Button*/
@@ -79,4 +99,22 @@ a {
   .logo--text {
     font-size: 3.5rem;
   }
+}
+
+/* Line */
+.line {
+  display: block;
+  height: 3px;
+  width: 50px;
+}
+
+.line--normal {
+  background-color: var(--color-body);
+}
+
+.line--accent {
+  display: block;
+  background-color: var(--color-accent);
+  height: 3px;
+  width: 50px;
 }
