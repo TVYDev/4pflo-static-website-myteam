@@ -1,0 +1,16 @@
+{
+  "name": "4pflo-static-website-myteam",
+  "version": "1.0.0",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "repository": "git@github.com:TVYDev/4pflo-static-website-myteam.git",
+  "author": "Vannyou <vannyoutang23@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
