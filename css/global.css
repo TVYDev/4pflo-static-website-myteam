@@ -53,11 +53,30 @@ a {
 }
 
 /* Menu */
+.menu {
+  display: flex;
+  flex-grow: 2;
+  gap: 3rem;
+  align-self: center;
+}
+
 .menu__item {
-  color: var(--color-body);
+  color: var(--color-heading);
 }
 
 .menu__item:hover,
 .menu__item:focus {
+  color: var(--color-body);
+}
+
+/* Logo */
+.logo--text {
   color: var(--color-heading);
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo--text {
+    font-size: 3.5rem;
+  }
 }
