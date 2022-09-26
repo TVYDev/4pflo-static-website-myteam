@@ -7,7 +7,7 @@ Production URL: https://soft-brioche-59c829.netlify.app/
 
 ## 🪶Aspiration
 
-Credit is given to [Frontend Mentor](<[frontendmentor.io](https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW)>) for the design.
+Credit is given to [frontendmentor.io](https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW) for the design.
 
 <br />
 
