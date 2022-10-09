@@ -32,6 +32,10 @@ h1 {
   margin: 1rem 0;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 6rem;
@@ -62,7 +66,7 @@ a {
   border: 1px solid var(--color-heading);
   border-radius: 20px;
   color: var(--color-heading);
-  padding: 6px 18px;
+  padding: 10px 20px;
 }
 
 .btn--primary-outline:hover,
@@ -104,7 +108,7 @@ a {
 /* Line */
 .line {
   display: block;
-  height: 3px;
+  height: 4px;
   width: 50px;
 }
 
@@ -113,8 +117,71 @@ a {
 }
 
 .line--accent {
-  display: block;
   background-color: var(--color-accent);
-  height: 3px;
-  width: 50px;
+}
+
+/* icon-list */
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.icon-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.icon-list__item .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  height: 6rem;
+  margin: auto;
+  position: relative;
+  width: 6rem;
+}
+
+.icon-list__item .icon__content {
+  font-size: 5rem;
+  left: -15px;
+  position: absolute;
+  top: -10px;
+}
+
+.icon-list__item .item-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon-list__item .item-content .title {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.icon-list__item .item-content .description {
+  margin: auto;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-list {
+    align-items: flex-start;
+  }
+
+  .icon-list__item {
+    flex-direction: row;
+  }
+
+  .icon-list__item .item-content {
+    text-align: left;
+  }
+
+  .icon-list__item .item-content .description {
+    max-width: 512px;
+  }
 }

@@ -18,7 +18,6 @@
 }
 
 .header-content,
-.main-content,
 .footer-content {
   max-width: 1440px;
   margin: 0 auto;
@@ -95,6 +94,11 @@
   text-align: center;
 }
 
+.purpose-content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .purpose__content .line {
   display: none;
 }
@@ -147,6 +151,80 @@
     top: 175px;
     left: 0;
     width: 80px;
+  }
+}
+
+/* Content -- Main -- Benefit */
+.benefit {
+  background-color: var(--color-secondary);
+  padding: 4rem 5rem 0 4rem;
+  position: relative;
+}
+
+.benefit-content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.benefit__image-1 {
+  height: 300px;
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+
+.benefit__image-2 {
+  display: none;
+}
+
+.benefit__title {
+  color: var(--color-heading);
+  width: 50%;
+}
+
+.benefit__title .line {
+  margin-bottom: 30px;
+}
+
+.benefit-list {
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .benefit-list {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefit {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15rem;
+  }
+
+  .benefit__title {
+    max-width: 400px;
+  }
+
+  .benefit-list .item-content .description {
+    max-width: 450px;
+  }
+
+  .benefit__image-1 {
+    display: none;
+  }
+  .benefit__image-2 {
+    display: block;
+    bottom: -15px;
+    height: 300px;
+    position: absolute;
+    right: 0;
   }
 }
 
