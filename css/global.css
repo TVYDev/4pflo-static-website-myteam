@@ -137,17 +137,17 @@ a {
   background-color: var(--color-primary);
   border-radius: 50%;
   display: inline-block;
-  height: 6rem;
+  min-height: 60px;
   margin: auto;
   position: relative;
-  width: 6rem;
+  min-width: 60px;
 }
 
 .icon-list__item .icon__content {
   font-size: 5rem;
   left: -15px;
   position: absolute;
-  top: -10px;
+  top: -5px;
 }
 
 .icon-list__item .item-content {

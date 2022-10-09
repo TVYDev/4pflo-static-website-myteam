@@ -202,10 +202,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .benefit {
+  .benefit-content {
     display: flex;
     justify-content: space-between;
     padding-right: 15rem;
+    gap: 20px;
   }
 
   .benefit__title {
